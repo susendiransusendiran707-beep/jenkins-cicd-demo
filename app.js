@@ -5,6 +5,7 @@ const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
   res.end('Version 1: Deployed automatically by Jenkins on AWS!\n');
+  res.end('Version 2: Deployed automatically by Jenkins on AWS!\n');
 });
 
 server.listen(port, () => {
